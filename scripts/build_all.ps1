@@ -1,12 +1,10 @@
 & "$PSScriptRoot\..\gitmodules\mod-installer\build_all.ps1" `
-  -Version "<version>" `
+  -Version "2.0.0" `
   -PreReleaseVersion "beta.1" `
-  -OutputFilePrefix "<output file prefix>" `
-  -ModName "<mod name>" `
-  -ModFolder "<mod folder>" `
-  -AdditionalModFolders @() `
+  -OutputFilePrefix "DayHard_0.8" `
+  -ModName "Day Hard 0.8" `
+  -ModFolder "DayHard" `
   -ModFilesPath "$PSScriptRoot\..\game" `
-  -ModBaseFilesUrl "<url to mod base files zip>" `
-  -ModBaseFilesUrlHash "<mod base files zip sha256>" `
-  -ModReadmePath "<mod readme path>" `
+  -ModBaseFilesUrl "https://github.com/HL2-Mods-Legacy-Project/hl2-legacy-registry/releases/download/day-hard/DayHard-0.8-Original.zip" `
+  -ModBaseFilesUrlHash "50a8476b62ac5a2e4a2df3243e7d56e2171f46910d0d0cc0b9635666cd65011e" `
   -PublishPath "$PSScriptRoot\..\artifacts\publish"
